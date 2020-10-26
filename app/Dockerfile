@@ -1,25 +1,30 @@
 FROM python:3.8.6-slim
 
-ENV PYTHONUNBUFFERED=1
 WORKDIR /app
-
 COPY pyproject.toml ./
 
-RUN apt-get update -y
-RUN apt-get upgrade -y
-RUN apt-get install -y \
+ENV PYTHONUNBUFFERED=1
+
+RUN apt-get update -y && \
+  apt-get upgrade -y && \
+  apt-get install -y --no-install-recommends \
   build-essential \
   curl \
   git \
-  gzip \
+  # gzip \
   inotify-tools \
-  ssh \
-  sudo \
-  tar \
+  # ssh \
+  # sudo \
+  # tar \
   vim
+RUN apt-get clean
 
 RUN pip install --upgrade pip
 
+# Install: Poetry
 RUN pip install poetry
 RUN poetry config virtualenvs.create false \
   && poetry install
+
+# Install: PyTorch
+RUN pip install torch torchvision
