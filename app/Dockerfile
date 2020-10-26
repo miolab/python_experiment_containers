@@ -19,8 +19,12 @@ RUN apt-get update -y && \
   vim
 RUN apt-get clean
 
-# Install: pip & poetry
 RUN pip install --upgrade pip
+
+# Install: Poetry
 RUN pip install poetry
 RUN poetry config virtualenvs.create false \
   && poetry install
+
+# Install: PyTorch
+RUN pip install torch torchvision
