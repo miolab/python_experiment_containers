@@ -1,12 +1,32 @@
 # Python Experiment Containers
 
-Python 試験実装用リポジトリ（主に機械学習）
+Python 試験実装用リポジトリ（主に機械学習用）
 
 ---
 
-### :book: Reference
+## :car: Usage
 
-PyTorch (Official) https://pytorch.org/
+```
+git clone https://github.com/miolab/python_experiment_containers.git
+
+cd python_experiment_containers.git
+
+docker-compose up
+```
+
+- 自動化テスト起動
+
+  ```
+  docker-compose run --rm app ptw
+  ```
+
+- JupyterLab をブラウザ起動
+
+  `localhost:8889/lab`
+
+## :book: Reference
+
+#### PyTorch (Official) https://pytorch.org/
 
 - Get Started https://pytorch.org/get-started/locally/
 
@@ -16,7 +36,7 @@ PyTorch (Official) https://pytorch.org/
 
   - Learning PyTorch with Examples https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
 
-PyPl
+#### PyPl
 
 - [torch (PyTorch)](https://pypi.org/project/torch/)
 
@@ -31,3 +51,7 @@ PyPl
 - [Matplotlib](https://pypi.org/project/matplotlib/)
 
 - [Seaborn](https://pypi.org/project/seaborn/)
+
+## :pen: Note
+
+- 本リポジトリは、[miolab/jupyterlab_poetry](https://github.com/miolab/jupyterlab_poetry) をベースにしたスピンオフ版です（機械学習に特化）
