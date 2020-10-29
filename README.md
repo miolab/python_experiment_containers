@@ -4,7 +4,27 @@ Python 試験実装用リポジトリ（主に機械学習）
 
 ---
 
-### :book: Reference
+## :car: Usage
+
+```
+git clone https://github.com/miolab/python_experiment_containers.git
+
+cd python_experiment_containers.git
+
+docker-compose up
+```
+
+- 自動化テスト起動
+
+  ```
+  docker-compose run --rm app ptw
+  ```
+
+- JupyterLab をブラウザ起動
+
+  `localhost:8889/lab`
+
+## :book: Reference
 
 PyTorch (Official) https://pytorch.org/
 
