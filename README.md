@@ -1,5 +1,7 @@
 # Python Experiment Containers
 
+[![miolab](https://circleci.com/gh/miolab/python_experiment_containers.svg?style=svg)](https://github.com/miolab/python_experiment_containers)
+
 Python 試験実装用リポジトリ（主に機械学習用）
 
 ---
@@ -55,3 +57,5 @@ docker-compose up
 ## :pen: Note
 
 - 本リポジトリは、[miolab/jupyterlab_poetry](https://github.com/miolab/jupyterlab_poetry) をベースにしたスピンオフ版です（機械学習に特化）
+
+- 検証ローカル環境: **MacOS**
