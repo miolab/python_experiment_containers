@@ -44,7 +44,7 @@ jobs:
             docker-compose run --rm app sh -c "pytest"
 
       - run:
-          name: Down Docker container
+          name: Down Docker container and Finish pipeline
           command: |
             set -x
             docker-compose down
