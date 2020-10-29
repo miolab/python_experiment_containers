@@ -1,27 +1,33 @@
 # Python Experiment Containers
 
-WIP
+Python 試験実装用リポジトリ（主に機械学習）
 
 ---
 
-### Reference
+### :book: Reference
 
-- PyTorch (Official) https://pytorch.org/
+PyTorch (Official) https://pytorch.org/
 
-  - Get Started https://pytorch.org/get-started/locally/
+- Get Started https://pytorch.org/get-started/locally/
 
-- PyPl
+- Tutorial https://pytorch.org/tutorials/index.html
 
-  -[torch (PyTorch)](https://pypi.org/project/torch/)
+  - Deep Learning with PyTorch: A 60 Minute Blitz https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html
 
-  -[torchvision](https://pypi.org/project/torchvision/)
+  - Learning PyTorch with Examples https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
 
-  -[JupyterLab](https://pypi.org/project/jupyterlab/)
+PyPl
 
-  -[NumPy](https://pypi.org/project/numpy/)
+- [torch (PyTorch)](https://pypi.org/project/torch/)
 
-  -[Pandas](https://pypi.org/project/pandas/)
+- [torchvision](https://pypi.org/project/torchvision/)
 
-  -[Matplotlib](https://pypi.org/project/matplotlib/)
+- [JupyterLab](https://pypi.org/project/jupyterlab/)
 
-  -[Seaborn](https://pypi.org/project/seaborn/)
+- [NumPy](https://pypi.org/project/numpy/)
+
+- [Pandas](https://pypi.org/project/pandas/)
+
+- [Matplotlib](https://pypi.org/project/matplotlib/)
+
+- [Seaborn](https://pypi.org/project/seaborn/)

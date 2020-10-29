@@ -11,11 +11,7 @@ RUN apt-get update -y && \
   build-essential \
   curl \
   git \
-  # gzip \
   inotify-tools \
-  # ssh \
-  # sudo \
-  # tar \
   vim
 RUN apt-get clean
 
@@ -25,6 +21,3 @@ RUN pip install --upgrade pip
 RUN pip install poetry
 RUN poetry config virtualenvs.create false \
   && poetry install
-
-# Install: PyTorch
-RUN pip install torch torchvision
