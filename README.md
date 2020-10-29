@@ -1,6 +1,6 @@
 # Python Experiment Containers
 
-WIP
+Python 試験実装用リポジトリ（主に機械学習）
 
 ---
 
