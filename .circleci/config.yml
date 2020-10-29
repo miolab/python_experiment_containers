@@ -1,0 +1,51 @@
+version: 2.1
+jobs:
+  build:
+    machine:
+      image: ubuntu-1604:202007-01
+
+    working_directory: ~/app
+
+    steps:
+      - checkout
+
+      - run:
+          name: Confirm directory state
+          command: |
+            set -x
+            pwd && ls
+
+      - run:
+          name: Build Docker container
+          command: |
+            set -x
+            docker-compose build
+
+      - run:
+          name: Up Docker container
+          command: |
+            set -x
+            docker-compose up -d
+            docker-compose run --rm app sh -c "python --version && poetry --version"
+
+      # - run:
+      #     name: Run Docker container
+      #     command: |
+      #       set -x
+      #       docker-compose up -d
+      #       sleep 10
+      #       docker ps -f status=running
+      #       docker-compose logs
+
+      - run:
+          name: Run Pytest
+          command: |
+            set -x
+            docker-compose run --rm app sh -c "pytest"
+
+      - run:
+          name: Down Docker container
+          command: |
+            set -x
+            docker-compose down
+            echo "finish pipeline"
