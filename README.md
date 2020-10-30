@@ -8,11 +8,19 @@ Python 試験実装用リポジトリ（主に機械学習用）
 
 ## :car: Usage
 
+#### セットアップ
+
 ```
 git clone https://github.com/miolab/python_experiment_containers.git
 
 cd python_experiment_containers.git
 
+docker-compose build
+```
+
+#### 起動
+
+```
 docker-compose up
 ```
 
@@ -22,9 +30,19 @@ docker-compose up
   docker-compose run --rm app ptw
   ```
 
-- JupyterLab をブラウザ起動
+- ターミナルで直接実行
 
-  `localhost:8889/lab`
+  例
+
+  ```
+  docker-compose run --rm app python app_pytorch/pytorch_example.py
+  ```
+
+- JupyterLab をブラウザ起動実行
+
+  ブラウザで `localhost:8889/lab`
+
+---
 
 ## :book: Reference
 
