@@ -1,5 +1,4 @@
 import app_pytorch.pytorch_example as pt
-# import pytest
 
 
 def test_init_test():
