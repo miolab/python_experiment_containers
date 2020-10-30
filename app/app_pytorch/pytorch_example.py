@@ -9,11 +9,34 @@ def init_test():
 def getting_started():
     print(torch.__version__, "\n")
 
+    # Construct a 5x3 matrix, uninitialized:
     x_empty = torch.empty(5, 3)
     print(x_empty, "\n")
 
+    # Construct a randomly initialized matrix:
     x_rand = torch.rand(5, 3)
     print(x_rand, "\n")
+
+    # Construct a matrix filled zeros and of set dtype:
+    x_zeros = torch.zeros(5, 3)
+    print(x_zeros, "\n")
+
+    x_zeros_dtype_long = torch.zeros(5, 3, dtype=torch.long)
+    print("# dtype: long\n", x_zeros_dtype_long, "\n")
+
+    x_zeros_dtype_float = torch.zeros(5, 3, dtype=torch.float)
+    print("# dtype: float\n", x_zeros_dtype_float, "\n")
+
+    # Construct a tensor DIRECTLY from data:
+    x_directly = torch.tensor([5.5, 3])
+    print(x_directly, "\n")
+
+    # Get size:
+    print("# x_zeros.size\n", x_zeros.size())
+    print("# x_directly.size\n", x_directly.size())
+
+    # ######## for DELIBERATELY Red test ########
+    # print(null_function, "\n")
 
 
 getting_started()
