@@ -6,10 +6,14 @@ def init_test():
     return 'init_test'
 
 
-print(torch.__version__)
+def getting_started():
+    print(torch.__version__, "\n")
 
-x_empty = torch.empty(5, 3)
-print(x_empty)
+    x_empty = torch.empty(5, 3)
+    print(x_empty, "\n")
 
-x_rand = torch.rand(5, 3)
-print(x_rand)
+    x_rand = torch.rand(5, 3)
+    print(x_rand, "\n")
+
+
+getting_started()
