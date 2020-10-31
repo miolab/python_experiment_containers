@@ -6,7 +6,9 @@ def init_test():
     return 'init_test'
 
 
-def getting_started():
+def do_getting_started():
+    global x_rand
+
     print(torch.__version__, "\n")
 
     # Construct a 5x3 matrix, uninitialized:
@@ -39,4 +41,15 @@ def getting_started():
     # print(null_function, "\n")
 
 
-getting_started()
+do_getting_started()
+
+
+def do_operations():
+    y_rand = torch.rand(5, 3)
+    print(x_rand + y_rand, "\n")
+
+    # ######## for DELIBERATELY Red test ########
+    # print(null_function, "\n")
+
+
+do_operations()
