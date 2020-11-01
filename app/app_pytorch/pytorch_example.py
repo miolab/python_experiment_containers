@@ -45,8 +45,13 @@ do_getting_started()
 
 
 def do_operations():
+    # Addition:
     y_rand = torch.rand(5, 3)
     print(x_rand + y_rand, "\n")
+    print(torch.add(x_rand, y_rand), "\n")
+
+    x_rand.add_(y_rand)
+    print(x_rand)
 
     # ######## for DELIBERATELY Red test ########
     # print(null_function, "\n")
