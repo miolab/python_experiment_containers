@@ -51,7 +51,21 @@ def do_operations():
     print(torch.add(x_rand, y_rand), "\n")
 
     x_rand.add_(y_rand)
-    print(x_rand)
+    print(x_rand, "\n")
+
+    # Show like NumPy
+    print(x_rand[:, 1], "\n")
+
+    # Resizing
+    x = torch.randn(4, 4)
+    y = x.view(16)
+    z = x.view(-1, 8)
+
+    print(x.size(), y.size(), z.size(), "\n")
+
+    a = torch.randn(1)
+    print(a, "\n")
+    print(a.item(), "\n")
 
     # ######## for DELIBERATELY Red test ########
     # print(null_function, "\n")
