@@ -11,3 +11,7 @@ def test_do_getting_started():
 
 def test_do_operations():
     pt.do_operations()
+
+
+def test_do_numpy_bridge():
+    pt.do_numpy_bridge()

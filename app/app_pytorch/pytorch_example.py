@@ -67,8 +67,10 @@ def do_operations():
     print(a, "\n")
     print(a.item(), "\n")
 
-    # ######## for DELIBERATELY Red test ########
-    # print(null_function, "\n")
-
 
 do_operations()
+
+
+def do_numpy_bridge():
+    # ######## for DELIBERATELY Red test ########
+    print(null_function, "\n")
