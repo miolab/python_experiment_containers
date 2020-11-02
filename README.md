@@ -42,6 +42,10 @@ docker-compose up
 
   ブラウザで `localhost:8889/lab`
 
+  - イメージ
+
+    <img width="585" alt="image of JupyterLab" src="https://user-images.githubusercontent.com/33124627/97857882-b4e63e80-1d41-11eb-859a-8a577ff2a7a5.png">
+
 ---
 
 ## :book: Reference
@@ -55,6 +59,8 @@ docker-compose up
   - Deep Learning with PyTorch: A 60 Minute Blitz https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html
 
   - Learning PyTorch with Examples https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
+
+#### Colaboratory (Official) https://colab.research.google.com/
 
 #### PyPl
 
