@@ -1,6 +1,11 @@
 import sklearn
 from sklearn.datasets import load_breast_cancer
 
+
+def init_test():
+    return "sklearn_exam_test"
+
+
 brest_cancer = load_breast_cancer()
 print(type(brest_cancer))
 
