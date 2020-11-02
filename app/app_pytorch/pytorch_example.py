@@ -67,8 +67,23 @@ def do_operations():
     print(a, "\n")
     print(a.item(), "\n")
 
+
+do_operations()
+
+
+def do_numpy_bridge():
+    # Converting a Torch Tensor to a NumPy Array:
+    a = torch.ones(5)
+    print(a, "\n")
+
+    a_numpy = a.numpy()
+    print(a_numpy, "\n")
+
+    b = a.add_(1)
+    print(b, "\n", b.numpy(), "\n")
+
     # ######## for DELIBERATELY Red test ########
     # print(null_function, "\n")
 
 
-do_operations()
+do_numpy_bridge()
