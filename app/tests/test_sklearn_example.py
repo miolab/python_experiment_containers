@@ -7,3 +7,7 @@ def test_init_test():
 
 def test_fn_load_breast_cancer():
     sk_exam.fn_load_breast_cancer()
+
+
+def test_fn_decision_tree():
+    sk_exam.fn_decision_tree()
