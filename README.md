@@ -62,6 +62,10 @@ docker-compose up
 
 #### Colaboratory (Official) https://colab.research.google.com/
 
+#### Poetry
+
+- commands https://cocoatomo.github.io/poetry-ja/cli/
+
 #### PyPl
 
 - [torch (PyTorch)](https://pypi.org/project/torch/)
