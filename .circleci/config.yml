@@ -24,13 +24,12 @@ jobs:
           command: |
             set -x
             docker-compose up -d
+            sleep 5
+            docker ps -f status=running
+            docker-compose logs
             docker-compose run --rm app bash -c "python --version && poetry --version"
             docker-compose run --rm db bash -c "psql --version"
             docker-compose exec db bash
-            exit
-            sleep 10
-            docker ps -f status=running
-            docker-compose logs
 
       - run:
           name: Run Pytest
