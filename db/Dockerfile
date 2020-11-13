@@ -1,4 +1,3 @@
 FROM postgres:12-alpine
 
-EXPOSE 5432
-CMD ["postgres"]
+ENV LANG ja_JP.utf8

@@ -4,8 +4,6 @@ jobs:
     machine:
       image: ubuntu-1604:202007-01
 
-    working_directory: ~/app
-
     steps:
       - checkout
 
@@ -22,20 +20,15 @@ jobs:
             docker-compose build
 
       - run:
-          name: Up Docker container
+          name: Up Docker containers and Confirm logs
           command: |
             set -x
             docker-compose up -d
-            docker-compose run --rm app sh -c "python --version && poetry --version"
-
-      # - run:
-      #     name: Run Docker container
-      #     command: |
-      #       set -x
-      #       docker-compose up -d
-      #       sleep 10
-      #       docker ps -f status=running
-      #       docker-compose logs
+            sleep 5
+            docker ps -f status=running
+            docker-compose logs
+            docker-compose run --rm app bash -c "python --version && poetry --version"
+            docker-compose run --rm db bash -c "psql --version"
 
       - run:
           name: Run Pytest
