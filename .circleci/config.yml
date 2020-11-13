@@ -29,7 +29,6 @@ jobs:
             docker-compose logs
             docker-compose run --rm app bash -c "python --version && poetry --version"
             docker-compose run --rm db bash -c "psql --version"
-            docker-compose exec db bash
 
       - run:
           name: Run Pytest
